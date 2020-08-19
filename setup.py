@@ -226,7 +226,7 @@ def setup_package():
                 "requests>=2.13.0,<3.0.0",
                 "spacy>=2.1.0",
                 "cython>=0.25"],
-            setup_requires=['wheel', 'spacy>=2.1.0'],
+            setup_requires=['wheel', 'spacy>=2.1.0', "cython>=0.25"],
             python_requires=">=3.6",
             packages=PACKAGES,
             package_data=PACKAGE_DATA,
