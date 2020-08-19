@@ -157,7 +157,7 @@ def chdir(new_dir):
 def generate_cython(root, source):
     print('Cythonizing sources')
     p = subprocess.call([sys.executable,
-                         '-m','pip', 'install', 'cython'])
+                         '-m','pip', 'install', 'cython', 'spacy', 'numpy'])
     if p != 0:
         raise RuntimeError('Running cythonize failed')
 
